@@ -1,20 +1,37 @@
-# Course Registration Form (Front-End Only)
+# ICT461 Course Registration Interface
 
-A standards-compliant, accessible course registration form built with vanilla HTML, CSS, and JavaScript. This project focuses on client-side validation, proper semantic markup, and clean separation of concerns (structure, presentation, and behavior).
+A modern, professional, and standards-compliant course registration form built with semantic HTML, responsive CSS, and vanilla JavaScript. This project features a clean white-and-blue glassmorphism (blur) design, keyboard-friendly controls, and robust client-side validation.
 
-> **Note:** This is a front-end only implementation. There is no backend server or database attached. The form uses a placeholder `action="#"` and prevents default submission via JavaScript so the page does not reload when submitted.
-
----
-
-## Features
-
-- **Semantic HTML5:** Uses appropriate input types, `<label>` elements tied to inputs via `for`/`id`, and `required` attributes.
-- **Custom Client-Side Validation:** Disables default browser validation (`novalidate`) to display custom, user-friendly error messages.
-- **Real-Time Feedback:** Error messages appear below the relevant field, and the input border turns red when validation fails.
-- **Accessible:** Labels are explicitly linked to inputs, and error messages are presented clearly.
-- **Responsive Design:** The form is centered and scales cleanly on different screen sizes.
-- **Separation of Concerns:** HTML, CSS, and JavaScript are kept in separate files for maintainability.
+**📦 Repository:** [Insert Your GitHub Repository URL Here]
 
 ---
 
-## File Structure
+## ✨ Features
+
+- **Clean UI:** White and Blue-500 (`#3b82f6`) theme with a soft frosted-glass effect using `backdrop-filter: blur()`.
+- **Semantic HTML5:** Proper use of `<main>`, `<header>`, `<form>`, `<label>`, and `<input>` elements.
+- **Keyboard Accessible:** Full `Tab` navigation, `:focus-visible` rings, and automatic focus on the first invalid field.
+- **Real-Time Validation:** Custom error messages appear beneath fields and clear automatically as the user types.
+- **Responsive Design:** Centered layout that adapts cleanly to mobile, tablet, and desktop screens.
+- **JavaScript Interaction:** A simulated loading state on the submit button upon successful validation.
+
+---
+
+## 📁 File Structure
+
+```text
+/mini-lab-ict461
+│
+├── index.html               # Form structure (semantic HTML5)
+├── style.css                # Responsive white/blue glassmorphism styling
+├── validation.js            # Client-side validation + JS interaction
+├── README.md                # Project documentation and reflection
+└── /screenshots             # DevTools and Git evidence folder
+    ├── add-image.png
+    ├── git-branch.png
+    ├── git-commit.png
+    ├── git-push.png
+    ├── git&node-v.png
+    ├── output and input.png
+    ├── elements-panel.png   <-- (Assuming you renamed/captured these)
+    └── network-panel.png    <-- (Assuming you renamed/captured these)
