@@ -111,10 +111,6 @@ label {
     transition: color 0.2s ease;
 }
 
-.input-wrapper {
-    position: relative;
-}
-
 input {
     width: 100%;
     padding: 0.75rem 1rem;
@@ -138,6 +134,13 @@ input:focus {
     box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
 }
 
+/* Keyboard-only focus ring (Tab) */
+input:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
 /* --- 6. Error States --- */
 .error-message {
     display: none;
@@ -153,7 +156,6 @@ input:focus {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Class applied via JavaScript when validation fails */
 .input-error {
     border-color: var(--error) !important;
     background: rgba(244, 63, 94, 0.05) !important;
